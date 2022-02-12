@@ -1,0 +1,705 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+        
+}
+
+/* CREAMOS NUESTRO LAYOUT */
+
+#HomeTemplate{
+   
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "header header header header"
+                          "inicio inicio inicio inicio" 
+                          "nosotros nosotros nosotros nosotros"
+                          "servicios servicios servicios servicios"
+                          "galeria galeria galeria galeria"
+                          "contactenos contactenos contactenos contactenos"
+                          "footer footer footer footer";
+
+}
+
+#HomeTemplate {
+     text-align: center;
+}
+
+#header {
+    grid-area: header;
+}
+
+#inicio {
+    grid-area: inicio;
+}
+
+#nosotros {
+    grid-area: nosotros;
+}
+
+#servicios {
+    grid-area: servicios;
+}
+
+#galeria {
+    grid-area: galeria;
+}
+
+#contactenos{
+    grid-area: contactenos;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+/* LAYOUT END */
+
+
+/* GENERALES */
+
+body{
+    background-color: rgb(56, 8, 78);
+    font-family: Roboto;
+    font-size: 14px;
+    overflow-x: hidden;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.boton{
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+
+.boton.boton-inicio{
+    background-color: rgb(77, 5, 77);
+    color: rgb(174, 168, 235);
+    border: solid 1px;
+    border-color: rgb(90, 80, 182);
+    border-radius: 5px;
+    
+}
+
+
+
+#contactenos form .form-block{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#contactenos form .form-block .form-control{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 2px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#contactenos form .form-block textarea {
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 2px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+
+/* FIN DE GENERALES */
+
+
+/* HEADER */
+
+#header {
+    background-color: rgb(0 22 54);
+    margin: 0px;
+}
+
+.contenedor{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+}
+
+.contenedor a {
+    font-family: roboto;
+    font-size: 20px;
+    color: white;
+    padding: 15px 15px;
+}
+
+.contenedor img{
+    width: 200px; 
+    border: solid 5px rgb(122, 6, 122);
+    border-radius: 20px 0 20px 0;
+    
+}
+
+
+
+/* INICIO */
+
+#inicio {
+    position: relative;
+}
+
+#inicio img {
+    width: 100%;
+    display: block;
+}
+
+#inicio .BloqueInicio{
+    position: absolute;
+    top: 20%;
+    left: 30px;
+    width: 500px;
+}     
+
+#inicio .BloqueInicio h1{
+    color: white;
+    font-size: 35px;
+} 
+
+#inicio .BloqueInicio p{
+    color: white;
+    font-size: 21px;
+    margin-bottom: 30px;
+  
+  } 
+
+
+
+.boton.BotonInicio{
+    background-color: rgb(77, 5, 77);
+    color: rgb(174, 168, 235);
+    border: solid 1px;
+    border-color: rgb(90, 80, 182);
+    border-radius: 5px;
+      
+}
+
+
+
+/* NOSOTROS */
+
+#nosotros {
+    background-image: url(../img/nosotros.jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.BloqueNosotros{
+    position: absolute;
+}
+
+
+#nosotros p {
+    width: 80%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+   
+}
+
+/* -------------- SERVICIOS  ---------- */
+
+#servicios { 
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     
+ }
+
+
+ #servicios img{
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 15px 0px 0 0;
+  
+ }
+
+ .ServiciosContainer{
+    height: 450px;
+    border: 2px solid white;
+    margin: 15px; 
+    border-radius: 15px 0 15px 0;
+ }
+
+ #servicios h3 {
+     color: white;
+     font-family: roboto;
+     font-size: 25px;
+     margin: 10px;
+ }
+#servicios p {
+     color: white;
+     font-family: roboto;
+     font-size: 20px;
+     
+}
+
+
+
+.boton.boton-servicio{
+    background-color: rgb(50, 13, 184);
+    color: rgb(200, 196, 224);
+    border: solid 1px;
+    border-color: rgb(53, 116, 253);
+    border-radius: 5px;
+    /* width: 100%; */
+    
+    
+}
+
+.BtnServicio {
+    padding-top: 30px;
+}
+
+/* ---------- GALERIA -------- */
+
+#galeria{
+    width: 100%;
+    height: 100%;
+}
+
+.GridGaleria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+}
+
+
+.GaleriaBloque{
+    background-color: rgba(167, 162, 162, 0.768);
+    border: 1px solid white;
+    margin: 10px 10px;
+    border-radius: 5px;
+    padding: 10px;
+    
+    text-align: center;
+}
+
+.GridGaleria img{
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    padding: 5px;
+}
+
+.GridGaleria a {
+    color: white;
+    font-family: roboto;
+    font-size: 20px;
+}
+
+
+
+
+/* -------------- CONTACTENOS ---------------- */
+
+
+#contactenos {
+    position: relative;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.row{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.columna {
+    padding-right: 15px;
+    padding-left: 15px; 
+
+}
+
+.columna-50{
+    width: 50%;
+}
+.mover-50{
+    margin-left: 50%;
+}
+
+
+#contactenos iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#contactenos form {
+    position: abosulute;
+    padding: 60px;
+    background-color: rgba(122, 6, 122, 0.377);
+    
+}
+
+#contactenos form .form-block{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#contactenos form .form-block .form-control{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 2px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#contactenos form .form-block textarea {
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 2px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#contactenos .contactenos-check{
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+    
+}
+
+.boton.boton-contactos{
+    background-color: rgba(93, 12, 223, 0.808);
+    color: rgba(200, 196, 224, 0.897);
+    border: solid 1px;
+    border-color: rgba(53, 116, 253, 0.466);
+    border-radius: 5px;
+}
+
+
+/* ------------ FOOTER ------------- */
+
+#footer{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(26, 3, 32, 0.945);
+    
+}
+
+#footer .FooterContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#footer .LogoFooter{
+    width: 100px;
+    border-radius: 20px 0 20px 0;
+    border: solid 5px rgb(122, 6, 122);
+}
+
+
+
+#footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+#footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#footer ul li{
+    margin-bottom: 10px;
+    color: white;
+}
+
+#footer u .FooterUbicar .li-footer{
+   align-items: left;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  
+}
+
+#footer .redes a{
+    font-size: 38px;
+ }
+
+ #footer p{
+     font-size: 20px;
+ }
+
+
+ .BarraFooter {
+    background-color: rgba(66, 8, 58, 0.726);
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.ColumnaFooter {
+    padding:15px;
+}
+
+
+#footer .redes{
+    display: flex;
+    justify-content:space-evenly;
+    
+ }
+ 
+
+ #footer .redes i{
+     color: white;
+     margin-top: 30px;
+  } 
+
+
+/* -------------------------------------------------------- */
+/* ++++++++++++++++ ECOMMERCE TEMPLATE ++++++++++++++++++++ */
+
+
+#HostingImg .row img{
+    width: 30%;
+    border-radius: 5px;
+    border: 2px solid white;
+   
+}
+
+#ContainerServicios{
+    padding: 10px;
+
+}
+#ContainerServicios h1{
+    padding-bottom: 10px;
+    
+}
+#ContainerServicios h2{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    
+}
+.row{
+    display: flex;
+}
+
+#ContainerServicios p{
+    text-align: justify;
+    padding-bottom: 10px;
+    
+}
+
+/* 
+  *********************************************************
+  +++++++++++++++++ MEDIA QUERYS ++++++++++++++++++++++++++
+  ********************************************************* */
+
+  @media screen and (max-width:425px) {
+    
+    /* ----- HEADER ----- */
+   
+    body{
+        padding: 0;
+        margin: 0;
+        
+        
+    }
+   
+   
+    .contenedor{
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .contenedor{
+        padding: 0px;
+    }
+
+    nav {
+        width: 100%;
+   }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }   
+
+    nav ul a{
+        background-color: rgb(66, 6, 66);
+        margin: 1px;
+    }
+
+
+    /*+++++++++  INICIO  +++++++++++*/
+
+
+   #inicio .BloqueInicio h1 {
+        text-align: left;
+        margin: 0px;
+   }
+
+   #inicio .BloqueInicio p {
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0;
+    text-shadow: 3px 3px 3px rgb(66, 6, 66);
+    padding: 10px;
+   }
+   #inicio .boton.BotonInicio {
+       border: 2px solid white;
+       color: white;
+       
+   }
+
+
+   /* +++++++++++++ NOSOTROS ++++++++++++ */
+
+   #nosotros .BloqueNosotros p {
+       text-decoration-color: aqua;
+       color: white;
+       text-decoration-color: blue ;
+   }
+
+   /*+++++++++++++ SERVICIOS  +++++++++*/
+
+   #servicios { 
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+     
+ }
+
+  /* +++++++++  GALERIAS  +++++++++++ */
+
+    #galeria .GridGaleria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    #galeria .GridGaleria img {
+            height: auto;
+            width: auto;
+            max-width: 195px;
+            max-height: 159px ;
+    }
+
+    .container-fluid{
+        width: 100%;
+    }
+
+  
+
+/* ++++++++++++++++ CONTACTENOS +++++++++++++++++ */
+
+    .columna{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+   
+    #contactenos iframe{
+        position: relative;
+        height: 400px;
+        /* margin: 0px 22px; */
+    }
+
+    #contactenos {
+        padding: 0;
+        margin: 0 22px;
+    }
+
+    #contactenos .columna{
+        width: 100%;
+        margin: 0px;
+    }
+
+    #contactenos.container{
+        padding: 0;
+    }
+
+    .boton.boton-contactos{
+        
+        color: rgba(200, 196, 224, 0.897);
+        
+    }
+
+
+    /* +++++++++ FOOTER +++++++++ */
+
+    #footer .FooterContainer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }   
+}  
+ 
+/* MEDIA QUERY PAGINAS */
+
+#ServiciosPagina {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}    
+
+#HostingImg img{
+    border-radius: 5px;
+    width: 100%;
+    margin: 0px;
+}
+
+
+#footer h3 {
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}

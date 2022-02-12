@@ -71,13 +71,15 @@ git merge LaRamaQueQueremosTraer
 Para restaurar o volver al estado anterior 
 git restore NombredelArchivoARrestaurar
 
+para comparar dos versiones o dos ramas es el siguiente
+ git diff gradiente master
 
 
 
 GIT HUB
 git remote add origin https://github.com/mfcorreaz/mfczmarcelocorrea.git
-git branch -M main
-git push -u origin main
+git branch -M master
+git push -u origin master
 
 
 
