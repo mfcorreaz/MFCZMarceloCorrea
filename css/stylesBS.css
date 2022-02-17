@@ -1,0 +1,303 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: boder-box;
+}
+
+
+
+img{
+	max-width: 100%;
+}
+
+.gallery{
+	background-color: rgba(58, 11, 119, 0.453);
+	padding: 80px 0;
+}
+
+.gallery img{
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+#gallery-modal .modal-img{
+	width: 100%;
+}
+
+
+#contactenos img{
+	width: 100%;
+	background-size: cover;
+} 
+
+nav {
+	background-color: rgb(56, 8, 78);
+	
+}
+
+.logoBorde{
+	width: 200px;
+	margin: 10px;
+	border-radius: 20px 0 20px 0;
+    border: solid 5px rgb(122, 6, 122);
+}
+
+
+/* CARRUSEL */
+	
+#carouselExampleCaptions h5{
+	font-size: 4rem;
+
+}
+
+#carouselExampleCaptions p{
+	font-size: 2rem;
+
+}
+
+
+/* SERVICIOS */
+
+.card{
+	background-color: rgba(129, 66, 211, 0.453);
+	border: 3px solid rgb(240, 239, 241);
+    border-radius: 20px 0 20px 0;
+	width: 100%;
+	height: 650px;
+	color: antiquewhite;
+  }
+
+  .contenedorServicios{
+	  width: 100%;
+	  background-color: rgb(56, 8, 78);
+
+  }
+  
+.card-tittle{
+	width: 100%;	
+}
+.mRow {
+	padding: 30px 0;
+	width: 100%;
+}
+
+.card img {
+	width: 100%;
+	height: 300px;
+	border-radius: 20px 0 0 0  ;
+}
+
+.card p{
+	margin: 0 15px;
+	text-align: justify;
+}
+
+.card a{
+	align-items: 100px;
+}
+
+.card .contactenos-check label{
+	color: white;
+}
+
+
+
+
+/* CONTACTENOS */
+#contactenos {
+	position: relative;
+}
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.filas{
+	display: flex;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.columna {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.columna-50{
+    width: 50%;
+}
+.mover-50{
+    margin-left: 50%;
+}
+
+#contactenos {
+	position: relative;
+}
+
+#contactenos iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#contactenos form{
+    padding: 60px;
+    background-color: rgba(122, 6, 122, 0.377);
+}
+
+#contactenos form .form-block{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#contactenos form .form-block .form-control{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 2px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#contactenos form .form-block textarea {
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 2px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.seccion {
+    
+    padding-bottom: 45px;
+}
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ PAGINA ECOMMERCE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.EcommerceRow{
+	display: flex;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.row-hosting{
+    display: flex;
+    z-index: 1;
+    margin-top: 90px;
+    margin-left: 0;
+}
+
+
+
+.hosting-img{
+	width: 40%;
+	padding-top: 0;
+  }
+ 
+ .container-servicios {
+	 width: 60%;
+	 padding: 0 15px 15px 15px;
+	 color: white;
+ }
+ 
+ .hosting-img img{
+	 border: 2px solid rgba(50, 136, 202, 0.638);
+	 border-radius: 10px;
+ }  
+
+ .container-servicios p {
+    font-size: 22px;
+    text-align: justify;
+    
+}
+
+#servicios-pagina {
+    background-color: grey;
+}
+
+#servicios-pagina .container-servicios p{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* -------------- Media query ------------------- */
+
+
+
+@media screen and (max-width:1008px) {
+   
+    .card  {
+		margin-bottom: 10px;
+	}
+
+
+    #contactenos {
+        padding: 0;
+		background: rgba(128, 0, 128, 0.487);
+    }
+
+    #contactenos iframe{
+        position: relative;
+        height: 500px;
+    }
+
+	#contactenos form{
+       margin-top: 40px;
+    }
+
+    #contactenos .columna{
+        width: 100%;
+        margin: 0px;
+    }
+	.contactenos-check  {
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	.row-hosting{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+       
+    }
+
+	.hosting-img{
+		width: 100%;
+		padding-top: 0;
+	  }
+	 
+    .container-servicios {
+		width: 100%;
+		padding: 15px 17px 17px 17px;
+		color: white;
+		font-size: 4rem;
+	}
+
+	.container-servicios p {
+	
+		font-size: 1rem;
+	}
+
+}
