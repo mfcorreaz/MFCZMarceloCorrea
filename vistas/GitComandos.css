@@ -36,6 +36,10 @@ git init
 Este comando nos va a permitir 
 git status
 
+
+modified:   css/styles.css
+modified:   index.html
+
 Para pasar de working directory a Staging Area usamos el siguiente comando
 git add nombredelarchivo.extension
 git add .    para agregar todo de una
@@ -44,8 +48,7 @@ git add css/  <--- ejemplo de como agregar una carpeta en este caso la carpeta c
 Para quitar de Staging Area y volver a Working Directory
 $ git rm --cached "index.html"  en este caso vamos a volver a index. es sin comillas el comando
 
-
-para comitear
+Para comitear
 git commit 
 git commit -m "Commit #1: Rama Master - Estructura Inicial del proyecto"
 
@@ -74,6 +77,14 @@ git restore NombredelArchivoARrestaurar
 para comparar dos versiones o dos ramas es el siguiente
  git diff gradiente master
 
+ Para pushear elcomando es 
+ git push -u origin master
+
+ Para merge llevar los cambios al master 
+ git merge ramaquedomifique
+Luego de eso se coloca el siguiente comando para que no haya diferencia entre la rama y el master
+ $ git push origin master
+
 
 
 GIT HUB
@@ -82,6 +93,7 @@ git branch -M master
 git push -u origin master
 
 
+https://github.com/mfcorreaz/mfczmarcelocorrea
 
 
 
@@ -91,3 +103,27 @@ git push -u origin master
 
 
 
+
+
+
+
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+</li>
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Servicios</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Ecommerce</a></li>
+            <li><a class="dropdown-item" href="#">Landing Page</a></li>
+            <li><a class="dropdown-item" href="#">Hosting</a></li>
+          </ul>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Galeria</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Contactos</a>
+</li> 
