@@ -45,6 +45,7 @@ git add nombredelarchivo.extension
 git add .    para agregar todo de una
 git add css/  <--- ejemplo de como agregar una carpeta en este caso la carpeta css que va a guardar todo su contenido
 
+
 Para quitar de Staging Area y volver a Working Directory
 $ git rm --cached "index.html"  en este caso vamos a volver a index. es sin comillas el comando
 

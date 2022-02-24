@@ -1,0 +1,17 @@
+// ############################# GALERIA  #######################################
+$colorPurpuraClaro: rgba(58, 11, 119, 0.453);
+$blanco:white;
+
+.gallery{
+     background-color: $colorPurpuraClaro;
+     padding: 80px 0;
+
+    img{
+        background-color: $blanco;
+        padding: 15px;
+        width: 100%;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        cursor: pointer;
+       }
+}
+// ##############################################################################

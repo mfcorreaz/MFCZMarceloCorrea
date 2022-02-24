@@ -1,0 +1,82 @@
+// ############################# SERVICIOS #######################################
+#servicios {
+
+    width: 100%;
+    background-color: rgb(56, 8, 78);
+    color: white;
+
+        .cardServ p{
+            margin: 0 15px;
+            font-size: 1.4rem;
+            text-align: justify;
+        }
+    
+        .cardServ h4{
+            margin: 15px 15px 15px 15px ;
+            font-size: 2rem;
+        }
+    
+        .cardServ img {
+            height: 300px;
+            width: 100%;
+            border-radius: 20px 0 0 0;
+        }
+    
+        .cardServ a{
+            align-items: 100px;
+        } 
+    
+        .servicioBoton  {
+            margin-bottom: 30px;
+            border: 0;
+        }
+    
+    
+        .card{
+            background-color: rgba(129, 66, 211, 0.453);
+            border: 3px solid rgb(240, 239, 241);
+            border-radius: 20px 0 20px 0;
+            width: 100%;
+            height: 650px;
+            color: antiquewhite;
+            
+            .contactenos-check label{
+                color: white;
+            }
+        }
+    
+          .contenedorServicios{
+            width: 100%;
+            background-color: rgb(56, 8, 78);
+          }		  
+
+        .card-tittle{
+            width: 100%;	
+        }
+    
+        .mRow {
+            padding: 30px 0;
+            margin-left: 1px;
+            width: 100%;
+        }
+    
+        .card img {
+            width: 100%;
+            height: 300px;
+            border-radius: 20px 0 0 0  ;
+        }
+    
+        .card p{
+            margin: 0 15px;
+            text-align: justify;
+        }
+    
+        .card a{
+            align-items: 100px;
+        }
+    
+        
+}
+
+
+// ###############################################################################

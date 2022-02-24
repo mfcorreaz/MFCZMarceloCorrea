@@ -1,0 +1,68 @@
+
+// @media screen and (max-width:425px) {
+
+// 	.carousel-item{
+// 		height: 350px;
+// 		background-size: cover;
+    
+// }
+
+@media screen and (max-width:768px) {
+   
+    .card  {
+		margin-bottom: 10px;
+	}
+
+	
+    #contactenos {
+        padding: 0;
+		background: rgba(128, 0, 128, 0.487);
+
+        iframe{
+            position: relative;
+            height: 500px;
+        }
+
+        form{
+            margin-top: 90px;
+                        
+         }
+
+        .columna{
+            width: 100%;
+            margin: 0px;
+        }
+    }
+}
+
+
+
+
+
+    
+	.contactenos-check  {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.row-hosting{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+    }
+
+	.hosting-img{
+		width: 100%;
+		padding-top: 0;
+	  }
+	 
+    .container-servicios {
+		width: 100%;
+		padding: 15px 17px 17px 17px;
+		color: white;
+		font-size: 4rem;
+	}
+
+	.container-servicios p {
+			font-size: 1rem;
+	}
