@@ -1,0 +1,48 @@
+footer {
+    
+    %ico {
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 5px 0;
+        margin: 2px auto;
+        border-radius: 2px;
+        color: #FFFFFF;
+      }
+      
+      .ico_youtube {
+        @extend %ico;
+        color: red;
+      }
+      .ico_facebook {
+        @extend %ico;
+        color: #4267B2;
+      }
+      .ico_twitter {
+        @extend %ico;
+        color: #00acee;
+      }
+
+      .ico_google {
+        @extend %ico;
+        color: #FBBC05;
+      }
+
+      .ico_linkedin {
+        @extend %ico;
+        color: #86888a;
+      }
+
+    
+    // $colores:(
+    //     "rojo":red,
+    //     "gris": green,
+    //     "verde": white ,
+    // );
+    
+    // @each $color, $valor in colores {
+    //     .arcoiris--#{$color} {
+    //         color:$valor;
+    //     }
+    // }
+}
+        

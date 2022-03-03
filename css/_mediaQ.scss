@@ -13,7 +13,6 @@
 		margin-bottom: 10px;
 	}
 
-	
     #contactenos {
         padding: 0;
 		background: rgba(128, 0, 128, 0.487);
@@ -22,28 +21,37 @@
             position: relative;
             height: 500px;
         }
+  
 
-        form{
-            margin-top: 90px;
-                        
-         }
-
-        .columna{
+        .contenedor .filas .mover-50 {
+            margin-left: 0%;
             width: 100%;
-            margin: 0px;
         }
     }
-}
-
-
-
-
 
     
-	.contactenos-check  {
+        .contenedorGaleria{
+          
+            // NO PUDE APLICAR ESTE EACH que recorra esa lista para darle un tamaño menor asi entran 2 por filas
+            // @each $trabajo in imagen1, imagen2, imagen3, imagen4, imagen6 {
+            //     .imgGaleria#{$trabajo} {
+            //       height: 300px;
+            //       width: 300px;
+            //       background-size: cover;
+                            
+            //    }
+            // }
+        }
+    
+
+}
+
+     .contactenos-check  {
 		display: flex;
 		flex-wrap: wrap;
-	}
+        .fsCheck, .fsLabel {
+         }
+ 	}
 
 	.row-hosting{
         display: flex;
@@ -64,5 +72,6 @@
 	}
 
 	.container-servicios p {
-			font-size: 1rem;
+			// font-size: 4rem;
 	}
+
