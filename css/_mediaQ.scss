@@ -1,12 +1,4 @@
 
-// @media screen and (max-width:425px) {
-
-// 	.carousel-item{
-// 		height: 350px;
-// 		background-size: cover;
-    
-// }
-
 @media screen and (max-width:768px) {
    
     .card  {
@@ -30,19 +22,7 @@
     }
 
     
-        .contenedorGaleria{
-          
-            // NO PUDE APLICAR ESTE EACH que recorra esa lista para darle un tamaño menor asi entran 2 por filas
-            // @each $trabajo in imagen1, imagen2, imagen3, imagen4, imagen6 {
-            //     .imgGaleria#{$trabajo} {
-            //       height: 300px;
-            //       width: 300px;
-            //       background-size: cover;
-                            
-            //    }
-            // }
-        }
-    
+      
 
 }
 

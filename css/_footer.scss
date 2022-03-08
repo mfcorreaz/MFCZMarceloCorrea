@@ -11,7 +11,7 @@ footer {
       
       .ico_youtube {
         @extend %ico;
-        color: red;
+        color: rgba(247, 11, 11, 0.664);
       }
       .ico_facebook {
         @extend %ico;
@@ -31,18 +31,7 @@ footer {
         @extend %ico;
         color: #86888a;
       }
-
-    
-    // $colores:(
-    //     "rojo":red,
-    //     "gris": green,
-    //     "verde": white ,
-    // );
-    
-    // @each $color, $valor in colores {
-    //     .arcoiris--#{$color} {
-    //         color:$valor;
-    //     }
-    // }
 }
+    
+   
         
