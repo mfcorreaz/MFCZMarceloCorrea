@@ -1,28 +1,46 @@
 
 // ###################### HEADER -NAV ##########################################
+// RESPONSIVE
+$breakpoints: (
+
+	xs : 375px,
+	sm : 425px,
+    md : 768px,
+    lg : 1024px,
+    xl:  1250px,
+  );
+
+
+
+
 nav{
+
 	background-color: rgb(56, 8, 78);
 		.logoBorde{
-			width: 200px;
+			width: 120px;
 			margin: 10px;
-			border-radius: 40px 10px 20px 0;
+			border-radius: 20px 0 20px 0;
 			border: solid 5px rgb(122, 6, 122);
 		}
 
 		.NavA a {
-			font-size: 25px;
 			color: white;
+			
 		}
 
 		.navegador {
-			background-color: rgba(243, 241, 241, 0.542);
+			background-color: rgba(15, 5, 20, 0.541);
 		}
-
 
 		.navegador li a{
-			color: black;
-			background-color: transparent;
+			color: white;
 		}
+
+		
 }
+
+
+
+
 
 // ###############################################################################

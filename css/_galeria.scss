@@ -1,20 +1,20 @@
 $blanco:white;
 
+
 $breakpoints: (
-    
+    ss : 320px,
+    xs : 375px,
     sm : 425px,
     md : 768px,
     lg : 1024px,
     xl: 1250px
-    );
+);
 
 @mixin media-up ($breakpoint) {
     @media screen and  (min-width: map-get($breakpoints, $breakpoint)) {
         @content;
     }
 }
-
-
 
 .gallery{
      background-color: $blanco;
@@ -28,42 +28,54 @@ $breakpoints: (
      }
 
      .contenedorGaleria{
-         @each $trabajo in imagen1, imagen2, imagen3, imagen4, imagen6 {
+        @each $trabajo in imagen1, imagen2, imagen3, imagen4, imagen5, imagen6 {
              .imgGaleria#{$trabajo} {
                background-image: url(/img/#{$trabajo}.jpg);
-               height: 300px;
-               width: 357px;
-              
                margin: 10px 10px;
                border: 4px solid rgba(138, 138, 138, 0.624);
                border-radius: 10px;
+               background-position: center;
+            //    background-size: contain;
                background-size: cover;
                box-shadow: 0 0 15px rgba(0,0,0,0.3);
+               height: 200px;
+               width: 300px;
+               
+               
 
-             
+
+                @include media-up(xs) {
+                    height: 260px;
+                    width: 355px;
+                    transition: all 400ms ease;
+                } 
 
                @include media-up(sm) {
-                height: 300px;
-                width: 405px;
-                transition: all 400ms ease;
+                    height: 240px;
+                    width: 400px;
+                    
+                    transition: all 400ms ease;
+                  
                }
+
                @include media-up(md) {
                
-                height: 290px;
-                width: 339px;
-                transition: all 400ms ease;
+                    height: 220px;
+                    width: 339px;
+                    transition: all 400ms ease;
                 }
+
                @include media-up(lg) {
-                height: 250px;
-                width: 299px;
-                transition: all 400ms ease;
-            }
+                    height: 230px;
+                    width: 299px;
+                    transition: all 400ms ease;
+               }
             
-            @include media-up(xl) {
-                height: 270px;
-                width: 420px;
-                transition: all 400ms ease;
-            }
+               @include media-up(xl) {
+                    height: 250px;
+                    width: 350px;
+                    transition: all 400ms ease;
+               }
                              
             }
          }

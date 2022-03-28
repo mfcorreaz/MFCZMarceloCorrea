@@ -1,50 +1,54 @@
 // ############################# CARRUSEL #######################################
-	
-#gallery-modal .modal-img{
-    width: 100%;
-  }
+// RESPONSIVE
+$breakpoints: (
+    xs : 375px,
+    sm : 425px,
+    md : 768px,
+    lg : 1024px,
+    xl: 1250px
+    );
+
 
 /* CARRUSEL */
 
 #carouselExampleCaptions{
-    .galeriaH1{
-        font-size: 4vw;
-        color: rgb(243, 241, 243);
-        // background-color: rgba(204, 17, 142, 0.618);
-        background-color: rgba(46, 9, 34, 0.618);
-        display: inline;
-        padding: 0 1vw;
-        padding-bottom: 7px;
-        border-radius: 10px;
-        border: 2px solid  rgb(146, 146, 146);
-    }
-    
-    .galeriaP{
-        margin-top: 20px;
-        padding: 15px 15px;
-        border-radius: 10px;
-        border: 2px solid  rgb(146, 146, 146);
-        font-size: 1.70vw;
-        color: rgb(240, 237, 241);
-        background-color: rgba(46, 9, 34, 0.618);
-        text-align: left;
+  
+    .carousel-item{
+          
+        .padrePH{
+            text-align: left;
+        }
+
+        .respoonCarru{
+            height: auto;
+        }
+
+        .galeriaH1{
+            font-size: 4vw;
+            color: rgb(243, 241, 243);
+            background-color: rgba(46, 9, 34, 0.618);
+            display: inline;
+            padding: 0 1vw;
+            padding-bottom: 7px;
+            border-radius: 10px;
+            border: 2px solid  rgb(146, 146, 146);  
+        }
+        
+        .galeriaP{
+            margin-top: 20px;
+            padding: 15px 15px;
+            border-radius: 10px;
+            border: 2px solid  rgb(146, 146, 146);
+            font-size: 1.70vw;
+            color: rgb(240, 237, 241);
+            background-color: rgba(46, 9, 34, 0.618);
+            text-align: center;
+        }
     }
 }
 
-
-
-
 // ##############################################################################
 
-// RESPONSIVE
-
-$breakpoints: (
-    
-    sm : 540px,
-    md : 768px,
-    lg : 1024px,
-    xl: 1250px,
-    );
 
 @mixin media-up ($breakpoint) {
     @media screen and  (min-width: map-get($breakpoints, $breakpoint)) {
@@ -52,26 +56,65 @@ $breakpoints: (
     }
 }
 
+.carousel-inner {
+    height: 250px;
+    width: 320px;
+    transition: all 400ms ease;
+    img{
+        height: 250px;
+        width: 320px;
+    }
 
-.respoonCarru img{
-    background-size: cover;
-   
+    @include media-up(xs) {
+        height: 260px;
+        width: 375px;
+        transition: all 400ms ease;
+        img{
+            height: 260px;
+            width: 770px;
+        }
+    }
+    
+    @include media-up(sm) {
+        height: 240px;
+        width: 425px;
+        transition: all 400ms ease;
+        img{
+            height: 240px;
+            width: 770px;
+        }
+    }
 
     @include media-up(md) {
-        height: 100%;
-        width: 100%;
+        height: 399px;
+        width: 768px;
         transition: all 400ms ease;
+        img{
+            height: 399px;
+            width: 768px;
+        }
+      
     }
 
     @include media-up(lg) {
-        height: 100%;
-        width: 100%;
+        height: 388px;
+        width: 1024px;
         transition: all 400ms ease;
+        img{
+            height: 388px;
+            width: 1024px;
+        }
+        
     }
 
     @include media-up(xl) {
-        height: 100%;
-        width: 100%;
+        height: 535px;
+        width: 1351px;
         transition: all 400ms ease;
+
+        img{
+            height: 535px;
+            width: 1351px;
+        }
     }
 }

@@ -6,7 +6,7 @@ git commit
 
 crear una nueva rama
 
-git branch nombredelnuevocommit
+git branch nombredelarrama
 
 
 git --version   //ver la version de git en nuestra pc 
@@ -37,13 +37,13 @@ Este comando nos va a permitir
 git status
 
 
-modified:   css/styles.css
-modified:   index.html
 
 Para pasar de working directory a Staging Area usamos el siguiente comando
 git add nombredelarchivo.extension
 git add .    para agregar todo de una
 git add css/  <--- ejemplo de como agregar una carpeta en este caso la carpeta css que va a guardar todo su contenido
+
+
 
 
 Para quitar de Staging Area y volver a Working Directory
@@ -67,7 +67,7 @@ Para agregar una rama el comando es el siguiente
 git branch Nombredelarama
 
 Para cambiarme de rama utilizo el siguiente comando
-git branch checkout  NombreDeLaRamaDondeMeVoy
+git checkout  NombreDeLaRamaDondeMeVoy
 
 Para traer los cambios de una rama al master usamos Merge
 git merge LaRamaQueQueremosTraer
@@ -128,3 +128,21 @@ https://github.com/mfcorreaz/mfczmarcelocorrea
 <li class="nav-item">
 <a class="nav-link active" aria-current="page" href="#">Contactos</a>
 </li> 
+
+
+
+
+@each 1:00 hs explica each
+
+
+centrado
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+
+
+
+btn-floating 
+btn-sm 
+text-white

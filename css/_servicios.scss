@@ -1,20 +1,58 @@
 // ############################# SERVICIOS #######################################
 
+$breakpoints: (
+    ss : 320px,
+    xs : 375px,
+    sm : 425px,
+    md : 768px,
+    lg : 1024px,
+    xl: 1250px
+);
+
+
+
+
+@mixin media-up ($breakpoint) {
+    @media screen and  (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+
 #servicios {
 
-    width: 100%;
+    width: 375px;
     background-color: rgb(56, 8, 78);
     color: white;
-
-           
+   
         .card{
             background-color: rgba(129, 66, 211, 0.453);
             border: 3px solid rgb(240, 239, 241);
             border-radius: 20px 0 20px 0;
             color: antiquewhite;
             
+            
             .contactenos-check label{
                 color: white;
+            }
+
+            .botonazo {
+                
+                width: 40%;
+                height: 3rem;
+                padding-top: 8px;
+                padding-right: 10px;
+                font-size: 1.2rem;
+                margin-top: 20px;
+                margin-bottom: 15px;
+                border-radius: 0 4px 15px 0;
+                text-align: end;
+                
+                a  {
+                    text-decoration: none;
+                    padding: 5px 5px;
+                    color: white;
+                }
             }
 
 
@@ -41,8 +79,86 @@
     
         .mRow {
             padding: 30px 0;
-            margin-left: 1px;
+          
+            margin: 0;
             width: 100%;
+            
+            text-align: center;
+
+            .rowHijo {
+                margin:0px auto;
+            }
+         
+        }
+
+        @include media-up(ss) {
+            height: 2050px;
+            width: 320px;
+            transition: all 400ms ease;
+           }
+
+        @include media-up(xs) {
+            height: 1950px;
+            width: 375px;
+            transition: all 400ms ease;
+           }
+
+        @include media-up(sm) {
+            height: 1910px;
+            width: 425px;
+            transition: all 400ms ease;
+            .card{
+                height: 38rem;
+                width: 25rem;
+                }
+
+
+           }
+        @include media-up(md) {
+            height: 1220px;
+            width: 768px;
+            transition: all 400ms ease;
+            .card{
+                height: 36rem;
+                width: 20rem;
+            }
+
+            .mRow{
+                padding-left: 2px;
+            }
+        }
+        @include media-up(lg) {
+            height: 700px;
+            width: 1024px;
+            transition: all 400ms ease;
+            .card{
+                height: 40rem;
+                width: 18rem;
+                
+                img{
+                    height: 900px;
+                }
+            }
+            .mRow{
+                padding-left: 15px;
+            }
+        }
+        
+        @include media-up(xl) {
+            height: 700px;
+            width: 1351px;
+            transition: all 400ms ease;
+            .card{
+                height: 40rem;
+                width: 25rem;
+
+                img{
+                    height: 800px;
+                }
+            }
+            .mRow{
+                padding-left: 15px;
+            }
         }
     
 }

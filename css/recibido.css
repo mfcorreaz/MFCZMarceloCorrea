@@ -1,0 +1,28 @@
+#recibido {
+  text-align: center;
+}
+
+#recibido h3 {
+  font-size: 2.1rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgba(58, 5, 58, 0.823);
+  margin-bottom: 30px;
+}
+
+#recibido p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#recibido .recibido-img {
+  border: 5px solid rgba(41, 2, 39, 0.604);
+  border-radius: 10px;
+}
+
+#recibido .logoReci {
+  border-radius: 10px;
+  border: 4px solid rgba(78, 3, 63, 0.296);
+  width: 150px;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=recibido.css.map */

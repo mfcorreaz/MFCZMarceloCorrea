@@ -2,7 +2,8 @@
 @media screen and (max-width:768px) {
    
     .card  {
-		margin-bottom: 10px;
+		margin-bottom: 15px;
+        
 	}
 
     #contactenos {
@@ -11,28 +12,27 @@
 
         iframe{
             position: relative;
-            height: 500px;
+            height: 400px;
         }
   
-
         .contenedor .filas .mover-50 {
             margin-left: 0%;
             width: 100%;
         }
     }
-
-    
-      
-
 }
 
      .contactenos-check  {
 		display: flex;
 		flex-wrap: wrap;
+       
         .fsCheck, .fsLabel {
+            font-size: 0.9;
          }
+
  	}
 
+     
 	.row-hosting{
         display: flex;
         flex-direction: column;
@@ -45,13 +45,10 @@
 	  }
 	 
     .container-servicios {
-		width: 100%;
-		padding: 15px 17px 17px 17px;
-		color: white;
-		font-size: 4rem;
-	}
+        width: 100%;
+        padding: 15px 17px 17px 17px;
+        color: white;
+        font-size: 4rem;
+    }
 
-	.container-servicios p {
-			// font-size: 4rem;
-	}
 
